@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from FastAPI.utils.utils import construct_welcome_message_with_name, calculate_profile_summary
+from FastAPI.utils.helper import construct_welcome_message_with_name, calculate_profile_summary
 from profiler import profile_function_sync, profile_function_async
 import os
 
