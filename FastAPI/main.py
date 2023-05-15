@@ -8,13 +8,13 @@ app = FastAPI()
 
 @app.get("/")
 @profile_function_sync
-def root():
+def say_hello():
     return {"message": "Hello World"}
 
 
 @app.get("/hello/{name}")
 @profile_function_async
-async def say_hello(name: str):
+async def say_hello_with_name(name: str):
     return construct_welcome_message_with_name(name)
 
 
